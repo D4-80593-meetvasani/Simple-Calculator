@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'LCD', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+
+}
+
+.calculator{
+    width:240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.calculator span{
+    width:60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #ADEFD1FF;
+    font-size: 1.2em;
+    color: #222;
+    font-weight: 500;
+    border-style: inset;
+    
+}
+
+
+
+.calculator span:hover{cursor: pointer;background-color: #9CC3D5FF;}
+
+.calculator .operations{
+    background: #8181e9;
+    color: #eee; 
+}
+
+.calculator .operations:hover{background-color: #2e2b58;}
+
+
+.calculator .clear{
+    background: #f07967;
+    color: #fff;
+}
+
+.calculator .clear:hover{background: #f54a2f}
+
+.calculator .inputArea {
+    grid-column: span 4;
+    padding: 20px 10px;
+    outline: none;
+    /* border : none; */
+    /* border-radius: 10px; */
+    font-size: 1.3em;
+
+}
+
+.calculator .plus{
+    grid-row: span 2;
+    height: 120px;
+    line-height: 120px;
+}
+
+.calculator .del{
+    background: #f07967;
+}
+.calculator .del:hover{background: #f54a2f;}
+
+.calculator .equal{
+    width: 60px;
+    background: rgb(88, 245, 135);
+    font-size: 1.2em;
+}
+
+.calculator .equal:hover{background: #1ab922;}
+
+.calculator .his{
+    width: 60px;   
+    background: #B1B3B3FF;
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+}
+
+.calculator .his:hover{background:#E3CD81FF;}
+
+
+
+#history{
+    width: 240px;
+    height: 364px;
+    overflow-y: scroll;
+    font-size: 1.1em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(154,0,255,1) 100%, rgba(22,9,121,1) 100%);
+    box-sizing: border-box;
+    padding: 20px 10px;
+    overflow: scroll;
+    
+}
+#history p ,#history h1{
+    color:rgb(200, 178, 252);
+}
+
+#history::-webkit-scrollbar{
+    width: 0;
+}
+
+#history h1{
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+#history p:last-child {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #eee;
+}

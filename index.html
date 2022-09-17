@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/lcd" rel="stylesheet">
+    
+    <style>
+        #history {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" class="calculator" name="calc">
+        <input type="text" name="txt" class="inputArea">
+        <span class ="bt" >1</span>
+        <span class="bt"> 2 </span>
+        <span class="bt"> 3 </span>
+        <span class="clear" onclick="document.calc.txt.value = '';" > C </span>
+        <span class="bt"> 4 </span>
+        <span class="bt"> 5 </span>
+        <span class="bt"> 6 </span>
+        <span class="operations plus" >+</span>
+        <span class="bt"> 7 </span>
+        <span class="bt"> 8 </span>
+        <span class="bt"> 9 </span>
+        <span class="bt"> 0 </span>
+        <span class="dot"> . </span>
+        <span class="del" onclick="document.calc.txt.value = backspace(document.calc.txt.value);"> DEL </span>
+        <span class="operations" >-</span>
+        <span class="equal" onclick="document.calc.txt.value = calculation(document.calc.txt.value) "> = </span>
+        <span class="his" onclick="userHistory()" >History</span>
+        <span class="operations" >*</span>
+        <span class="operations" >/</span>
+    </form>
+
+    
+
+    <div id="history">
+        <h1>History</h1>
+        <p id="hs"></p>
+    </div>
+
+    <script src="script.js">
+        
+
+    </script>
+
+
+</body>
+
+</html>
